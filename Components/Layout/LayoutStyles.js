@@ -8,13 +8,13 @@ export const LayoutContainer = styled.View`
   padding: 20px;
 `;
 
-export const LayoutTop = styled.View`
-  height: 10%;
+export const LayoutTop = styled(FlatList)`
+  flex: 1;
   display: flex;
 `;
 
-export const LayoutBot = styled(FlatList)`
-  flex: 1;
+export const LayoutBot = styled.View`
+  height: 10%;
   display: flex;
 `;
 

@@ -31,7 +31,7 @@ const Layout = () => {
 
   return (
     <LayoutContainer>
-      <LayoutBot
+      <LayoutTop
         data={allGoals}
         renderItem={(itemData) => {
           const { item, index } = itemData;
@@ -45,13 +45,13 @@ const Layout = () => {
           );
         }}
       />
-      <LayoutTop>
+      <LayoutBot>
         <GoalInput
           goal={goal}
           modalVisible={modalVisible}
           actions={{ handleInput, setNewGoal, openModal, closeModal }}
         />
-      </LayoutTop>
+      </LayoutBot>
     </LayoutContainer>
   );
 };
